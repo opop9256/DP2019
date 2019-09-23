@@ -29,19 +29,19 @@
         <footer>
 
         </footer>
-        <style type="text/css">
+        <style>
             #myCanvas{
-                height: 300px;
+                height: 150px;
                 width: 300px;
             }
         </style>
               
-        <canvas id="mycanvas">
+        <canvas id="myCanvas">
         </canvas>
         <script>
                 var canvas = document.getElementById("myCanvas"); //myCanvas라는 이름의 canvas element를 받아옵니다.
                 var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
-                ctx.fillStyle = "#FF0000"; //색을 지정합니다.
+                ctx.fillStyle = "#FF0000"; //색을 지정합니다.ㄴ
                 
                 ctx.fillRect(25, 25, 100, 100); //채움 사각형
                 ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
@@ -65,13 +65,13 @@
                 ctx.stroke();
                 </script>
 
-                <!-- 오디오(소리) 관련 재생정지 -->
+                <!-- 오디오(소리) 관련 재생장치 -->
                 <!-- src 파일 주소, type파일 타입(형식)-->
                 <audio controls>
                     <source src="./media/crowd-cheering.mp3"type="audio/mpeg" /> 
                 </audio>
 
-                <!-- 비디오(영상) 관련재생 정지 -->
+                <!-- 비디오(영상) 관련재생 장치 -->
                 <video width="640px" height="480px" controls>
                     <source src="./media/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
                 </video>
