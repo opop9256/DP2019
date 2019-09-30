@@ -73,5 +73,97 @@
 
         <a href="#">링크 버튼</a>
 
+        <style>
+            #boxmodel1{
+                background-color: #dddddd;
+                width: 100px;
+                height: 200px;
+                margin: 100px;/* 바깥 여백 (박스 바깥쪽)*/
+                padding: 100px; /* 안쪽 여백 (박스안쪽)*/
+                border: solid 1px  black; /* 경계 + 박스사이즈 업*/
+                /* 경계 : 선두깨와 선 색 */
+            }
+        
+        </style>
+        <div id="boxmodel1">박스모델1</div>
+        인라인 태그
+
+        <style>
+            /* 하위 요소 선택자, 덮어쓰기*/
+            div li{
+                color: coral;
+            }
+            /* 자식 요소 선택자, 부동호 기호 */
+            div>ul>li{
+                text-decoration: underline;                
+            }
+            /*  */
+            div,ul,li{
+                color: blueviolet;/* 16진수  */
+                color: #000;/* 3자리 컬러코드 #rgb*/
+                color: #000000;/* 6자리 컬러코드 #rrggbb*/
+                color: rgb(0,0,255);/* ??? */
+                color: rgb(0%,0%,100%);
+            }
+        </style>
+        <div style="color: blue;">
+            container
+            <ul>
+                <li>리스트1</li>
+                <li>리스트2</li>
+                <li>리스트3</li>
+                <li>리스트4</li>
+            </ul>
+
+        </div>
+
+
+        <style>
+        .position_test{
+            background-color: #ddd;
+            /* static 정적인(가본) */
+            position: static;
+            /* absolute 절대적인 */
+            /* top, left, right, bottom
+            위치 조종 기능 */
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            /* fixed 고정된 */
+            position: fixed;
+
+        }
+        </style>
+        <div class="position_test">
+            position_test
+        </div>
+
+        <style>
+            .font_test{
+                font-family: "Bradley hand ITC";
+                font-size: 10px;
+                /* small, bold, bolder */
+                font-weight: bold;
+                /* pormal,  */
+                font-style: oblique;
+                font-variant: small-caps;
+                /* left certer right */
+                /* inling 요소에만 적용됨 */
+                text-align: center;
+                height: 150px;
+                background-color: #ddd;
+                text-decoration: underline;
+            }
+
+        </style>
+
+        <div class="font_test">
+            <span>AbCdeFg</span>    
+            container
+            font_test
+            <img width="50px" src="images/바닷속.jpg">
+        </div>
+        
+
     </body>
 </html>
