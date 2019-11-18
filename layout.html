@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRICKLES & CO</title>
+        <meta charset="utf-8">
+        <style>
+        body{
+            background-color: #c7c7c7;
+        }
+        .clear {clear:both; height:0; overflow:hidden;}
+        /* 뜻 = 클래스명 clear (지움:양쪽; 높이:0; 넘쳤을때:숨김;) */
+        .long_line{
+            width: 500px;
+            height: 0px;
+            border-bottom: solid 1px #ddd;
+            margin: 20px 0px;
+        }
+        header{
+            color: rgb(216, 176, 176);
+            padding: 10px 50px;
+        }
+        header>h1{
+            float: left;
+            padding-left: 10px;/* 안쪽여백 . 왼쪽 : 10px; */
+            padding-right: 10px;/* 바깥여백 . 오른쪽 : 10px; */
+            font-size: 30px;
+        }
+        header>ul>li{
+            float: right; /* 오른쪽 기준으로 흐르듯 정렬 */
+            list-style: none;/* li의 표시(동그라미) 없음(none)!!! */
+            padding-left: 10px;/* 안쪽여백 . 왼쪽 : 10px; */
+            padding-right: 10px;/* 바깥여백 . 오른쪽 : 10px;*/
+            font-size: 12px;
+        }
+        nav>h2{
+            font-size: 60px;
+            margin: 0px;
+        }
+        nav{
+            background-image: url("images/말린생화.png");
+            background-size: cover; /* 커버 */
+                 background-repeat: no-repeat;
+                 /* repeat, no-repeat, repeat-x, repeat-y */
+                 background-color: black;
+                 background-position: 100%; /* 0% 최소, 100% 최대 */
+            color: white; /* 글씨 색깔은 상속 됩니다. */
+            padding: 200px 100px;/* 상하 좌우 */
+        }
+        section{
+            color: rgb(218, 171, 171);
+        }
+        section>div{
+            padding: 60px;
+        }
+        
+
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>PRICKLES & CO</h1>
+                <div class="clear"></div>
+                <ul>
+                    <li>Home</li>
+                    <li>shop</li>
+                    <li>About</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                    <div class="clear"></div>
+                </ul>
+            </header>
+            <nav>
+                <div class="long_line"></div>
+                <h2>PRICKLES & CO</h1>
+                <p>THE BOUTIQUE STORE FOR PLANTS </p>
+                <div class="long_line"></div>
+            </nav>
+            <div id="mant">
+                <section>
+                    <div>
+                        <h3>ABOUT US</h3>
+                        <p>I'm a paragraph. Click here to add your own text and edit me.
+                         It’s easy. Just click “Edit Text” or double click me to add your own content
+                         and make changes to the font. Feel free to drag and drop me anywhere you like on 
+                         your page. I’m a great place for you to tell a story and let your users know
+                         a little more about you.
+
+                         This is a great space to write long text about your company and your services.
+                         You can use this space to go into a little more detail about your company. 
+                         Talk about your team and what services you provide.
+                        </p>
+                        <img src="images/드라이 플라워`.jpg">
+                    </div>
+                </section>
+                <section>
+                    <h4>BUY ONLINE NOW & GET 10% OFF !</h4>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
