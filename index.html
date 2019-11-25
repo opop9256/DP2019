@@ -9,26 +9,65 @@
 			body{
 				background-color: #505050;
 			}
-		    h1,div{
-			color: #ddd;
+			@media screen and (max-width: 1920px) {
+  				body{background-color: olive;}
+			}
+			@media screen and (max-width: 1023px){
+				body{background-color: steelblue;}
+			}
+			@media screen and (max-width: 767px){
+				body{background-color: slategrey;}
+			}
+		    
 		    }
+			h1{
+				font-size: 30px;
+				margin: 50px;
+				color: seashell;
+			}
+			.col-1{width: calc(100% / 10);}
+			.col-2{width: calc(100% / 9);}
+			.col-3{width: calc(100% / 8);}
+			.col-4{width: calc(100% / 7);}
+			.col-5{width: calc(100% / 6);}
+			.col-6{width: calc(100% / 5);}
+			.col-7{width: calc(100% / 4);}
+			.col-8{width: calc(100% / 3);}
+			.col-9{width: calc(100% / 2);}
+			.col-10{width: calc(100% / 1);}
+			[class*="col-"] {
+                float: left;
+            }
+
+
+			body div:nth-child(1){background-color: tan;}
+			body div:nth-child(2){background-color: teal;}
+			body div:nth-child(3){background-color: thistle;}
+			body div:nth-child(4){background-color: tomato;}
+			body div:nth-child(5){background-color: turquoise;}
+			body div:nth-child(6){background-color: rosybrown;}
+			body div:nth-child(7){background-color: cadetblue;}
+			body div:nth-child(8){background-color: bisque;}
+			body div:nth-child(9){background-color: lightblue;}
+			body div:nth-child(10){background-color: salmon;}
+
+
+
 		</style>
 	</head>
 
 	<body>
-		<h1>2019221023 황현지</h1>
+		<h1 class="col-10">2019221023 황현지</h1>
 
-        <div>
-			<a href="./training.html">HTML 연습</a>
-			<a href="./html_part1.html">자유주제</a>
-			<a href="./html5.html">html5</a>
-			<a href="./css.html">css</a>
-			<a href="./layout1.html">layou1</a>
-			<a href="./layout2.html">layou2</a>
-			<a href="./layout3.html">layou3</a>
-			<a href="./responsive.html">responsive</a>
-			<a href="./layout.html">기말고사</a>
-        </div>
+        <div class="col-1"><a href="./training.html">HTML 연습</a></div>
+		<div class="col-2"><a href="./html_part1.html">자유주제</a></div>
+		<div class="col-3"><a href="./html5.html">html5</a></div>
+		<div class="col-4"><a href="./css.html">css</a></div>
+		<div class="col-5"><a href="./layout1.html">layou1</a></div>
+		<div class="col-6"><a href="./layout2.html">layou2</a></div>
+		<div class="col-7"><a href="./layout3.html">layou3</a></div>
+		<div class="col-8"><a href="./responsive.html">responsive</a></div>
+		<div class="col-9"><a href="./layout.html">기말고사</a></div>
 
 		<!-- anchor -->
 	</body>
